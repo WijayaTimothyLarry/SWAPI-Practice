@@ -1,38 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-image: url("./pictures/background.png");
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-size: cover;
+  background-position: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#login-form {
+  position: absolute;
+  left: 25vh;
+  right: 25vh;
+  top: 25%;
+  bottom: 25%;
+  width: 50vh;
+  height: 25vh;
+  background: #c4c4c4;
+  border-radius: 2%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#login-label {
+  margin: auto;
+  font-family: roboto;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+}
+
+#autocomplete {
+  position: absolute;
+  margin: auto;
+  font-family: roboto;
+  font-size: 5vh;
+  text-align: center;
+  position: relative;
+}
+#login-button {
+  position: relative;
+}
+
+#not-found {
+  position: absolute;
+  left: 75vh;
+  top: 25vh;
+  padding: 5%;
+
+  background: #c4c4c4;
+  border-radius: 20px;
 }
