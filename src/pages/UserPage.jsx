@@ -18,6 +18,7 @@ const UserPage = () => {
   return (
     <div id="login-form">
       <div>Hi, {}</div>
+      <button onClick={onClick}>Sign Out</button>
     </div>
   );
 };

@@ -12,7 +12,6 @@ const LoginPage = () => {
     event.preventDefault();
     store.dispatch(actions.LOGIN(value));
     console.log(store.getState());
-
     history.push("/user");
   };
 
