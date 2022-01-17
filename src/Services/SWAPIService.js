@@ -4,8 +4,10 @@ import config from "../utils/config.json";
 const loginEndPoint = config.api + "api/people/?search=";
 
 export const login = async (username) => {
+  console.log(loginEndPoint + username);
   const { data } = await http.get(loginEndPoint + username);
-  return data;
+  console.log(data);
+  return data.results[0];
 };
 
 export const search = async (username) => {
@@ -14,7 +16,7 @@ export const search = async (username) => {
   const nameList = data.results.map((bio) => {
     return { value: bio.name };
   });
-  console.log(nameList);
+  console.log("nameList", nameList);
   return nameList;
 };
 
